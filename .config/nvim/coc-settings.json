@@ -1,0 +1,76 @@
+{
+  // cursors
+  "cursors.cancelKey": "<esc>",
+  "cursors.nextKey": "<C-n>",
+  "cursors.previousKey": "<C-p>",
+  // diagnostic
+  "diagnostic.enable": true,
+  "diagnostic.errorSign": "",
+  "diagnostic.warningSign": "⚠",
+  "diagnostic.infoSign": "",
+  "diagnostic.hintSign": "󰌶",
+  "diagnostic.enableHighlightLineNumber": true,
+  // outline
+  "outline.autoPreview": true,
+  "outline.autoWidth": true,
+  "outline.checkBufferSwitch": true,
+  "outline.followCursor": true,
+  "outline.keepWindow": true,
+  // suggest
+  "suggest.autoTrigger": "always",
+  "suggest.defaultSortMethod": "length",
+  "suggest.selection": "first",
+  "suggest.snippetsSupport": true,
+  // workspace
+  "workspace.rootPatterns": [".git", ".hg", ".projections.json"],
+  // preferences
+  "coc.preferences.bracketEnterImprove": true,
+  "coc.preferences.extensionUpdateCheck": "weekly",
+  "coc.preferences.formatOnSave": true,
+  "coc.preferences.formatOnType": false,
+  // float
+  "floatFactory.floatConfig": {
+    "border": true,
+    "rounded": true
+  },
+  // others
+  "pullDiagnostic.onChange": true,
+  "signature.enable": true,
+  "inlayHint.enable": true,
+  "codeLens.enable": true,
+  // EXTENSIONS
+  // coc-prettier
+  "prettier.enable": true,
+  "prettier.formatterPriority": 1,
+  // coc-snippets
+  "snippets.autoTrigger": true,
+  "snippets.ultisnips.pythonPrompt": true,
+  // coc-pyright for Python
+  "pyright.enable": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.typeCheckingMode": "standard",
+  "python.formatting.provider": "autopep8",
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "pyright.completion.snippetSupport": true,
+  "pyright.organizeimports.provider": "pyright",
+  "pyright.testing.provider": "unittest",
+  // coc-sumenko-lua for Lua
+  "sumneko-lua.enable": true,
+  "sumneko-lua.enableNvimLuaDev": true, // Enable the nvim lua development
+  "Lua.format.enable": true,
+  "Lua.format.defaultConfig": {
+    "indent_style": "space",
+    "indent_size": "2"
+  },
+  // coc-sh for Bash
+  "languageserver": {
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
+    }
+  }
+}
