@@ -1,0 +1,43 @@
+# Jivu Alacritty theme
+
+# Colors are specified using their hexadecimal values with a # prefix: #RRGGBB.
+
+[colors]
+# When true, bold text is drawn using the bright color variants(default=false).
+draw_bold_text_with_bright_colors = false
+
+# Default colors
+[colors.primary]
+background = "#212220"
+foreground = "#d6d7d5"
+
+# Colors which should be used to draw the terminal cursor.
+[colors.cursor]
+cursor = "#d6d7d5"
+
+# Colors used for drawing selections.
+[colors.selection]
+text = "#212220"
+cursor = "#989b97"
+
+# Normal colors
+[colors.normal]
+black = "#14151b"
+red = "#fb9daa"
+green = "#acc464"
+yellow = "#ddb56e"
+blue = "#72c5ee"
+magenta = "#e2a6ed"
+cyan = "#12cebc"
+white = "#e0e2df"
+
+# Bright colors
+[colors.bright]
+black = "#3e443b"
+red = "#fdd8dd"
+green = "#c3d590"
+yellow = "#e9cea0"
+blue = "#a9dbf4"
+magenta = "#f3d9f7"
+cyan = "#31edda"
+white = "#eff0ef"

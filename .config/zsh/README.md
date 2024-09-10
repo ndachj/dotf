@@ -1,7 +1,6 @@
 # 💥 Ndachj's zsh config
 
 ![Screenshot 01](./screenshots/01.jpg)
-![Screenshot 02](./screenshots/02.jpg)
 
 ## 🛠 Quick Guide
 

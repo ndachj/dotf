@@ -64,12 +64,19 @@
     "indent_style": "space",
     "indent_size": "2"
   },
-  // coc-sh for Bash
   "languageserver": {
+    // coc-sh for Bash
     "bash": {
       "command": "bash-language-server",
       "args": ["start"],
-      "filetypes": ["sh"],
+      "filetypes": ["sh", "zsh"],
+      "ignoredRootPaths": ["~"]
+    },
+    // coc-toml for Toml
+    "toml": {
+      "command": "taplo",
+      "args": ["lsp", "tcp"],
+      "filetypes": ["toml"],
       "ignoredRootPaths": ["~"]
     }
   }

@@ -1,0 +1,231 @@
+# ~/.config/alacritty/alacritty.toml
+# See: `man 5 alacritty`
+
+##### General #####
+# Import additional configuration files.
+import = [
+  "~/.config/alacritty/chalkboard-alacritty.toml",
+  # "~/.config/alacritty/keybindings.toml",
+  # "alacritty-theme/themes/gruvbox_dark.toml",
+]
+
+# You can set `shell.program` to the path of your favorite shell, e.g. `/bin/zsh`.
+# [shell]
+# program = "/bin/zsh"
+# args = ["-l"]
+
+# Directory the shell is started in. If this is unset, or `None`, the working
+# directory of the parent process will be used(default=None).
+working_directory = "None"
+
+# Live config reload (changes require restart)(default=true)
+live_config_reload = true
+
+# Offer IPC using alacritty msg (unix only)
+ipc_socket = true
+
+
+##### Window #####
+[window]
+# Window position
+# Specified in number of pixels.
+# If the position is "None", the window manager will handle placement.
+position = "None"
+
+# Window padding
+# Blank space added around the window in pixels(default={ x = 0, y = 0 }).
+padding = { x = 0, y = 0 }
+
+# Borders and title bar
+#     - Full: Borders and title bar(default)
+#     - None: Neither borders nor title bar
+decorations = "Full"
+
+# Background opacity
+# Window opacity as a floating point number from 0.0 to 1.0.
+# The value `0.0` is completely transparent and `1.0` is opaque(default=1.0).
+opacity = 0.8
+
+# Window title(default=Alacritty)
+title = "Alacritty"
+
+# Allow terminal applications to change Alacritty's window title(default=true).
+dynamic_title = true
+
+# Window class (Linux/BSD only)
+#     - instance - Application instance name
+#     - general - General application class
+class = { instance = "Alacritty", general = "Alacritty" }
+
+
+##### Scroll #####
+[scrolling]
+# Maximum number of lines in the scrollback buffer(default=10000).
+# Specifying '0' will disable scrolling.
+history = 5000
+
+# Number of lines the viewport will move for every line scrolled when
+# scrollback is enabled (history > 0)(default=3).
+# multiplier = 3
+
+
+##### Font #####
+[font]
+# Default:
+#   Linux/BSD: { family = "monospace", style = "Regular" }
+#   Windows: { family = "Consolas", style = "Regular" }
+#   macOS: { family = "Menlo", style = "Regular" }
+# normal = { family = "Source Code Pro", style = "Regular" }
+# normal = { family = "CodeNewRoman Nerd Font", style = "Regular" }
+normal = { family = "Hack Nerd Font", style = "Regular" }
+# normal = { family = "JetBrains Mono", style = "Regular" }
+# normal = { family = "TerminessTTF Nerd Font", style = "Regular" }
+# normal = { family = "Mononoki Nerd Font", style = "Regular"}
+
+# # If the bold family is not specified, it will fall back to the
+#  value specified for the normal font.
+# bold = { family = "Source Code Pro", style = "Bold" }
+# bold = { family = "CodeNewRoman Nerd Font", style = "Bold" }
+bold = { family = "Hack Nerd Font", style = "Bold" }
+# bold = { family = "JetBrains Mono", style = "Bold" }
+# bold = { family = "TerminessTTF Nerd Font", style = "Bold" }
+# bold = { family = "Mononoki Nerd Font", style = "Bold"}
+
+# If the italic family is not specified, it will fall back to the
+# value specified for the normal font.
+# italic = { family = "Source Code Pro", style = "Italic" }
+# italic = { family = "CodeNewRoman Nerd Font", style = "Italic" }
+italic = { family = "Hack Nerd Font", style = "Italic" }
+# italic = { family = "JetBrains Mono", style = "Italic" }
+# italic = { family = "TerminessTTF Nerd Font", style = "Italic" }
+# italic = { family = "Mononoki Nerd Font", style = "Italic"}
+
+# If the bold italic family is not specified, it will fall back to the
+# value specified for the normal font.
+# bold_italic = { family = "Source Code Pro", style = "Bold Italic" }
+# bold_italic = { family = "CodeNewRoman Nerd Font", style = "Bold Italic" }
+bold_italic = { family = "Hack Nerd Font", style = "Bold Italic" }
+# bold_italic = { family = "JetBrains Mono", style = "Bold Italic" }
+# bold_italic = { family = "TerminessTTF Nerd Font", style = "Bold Italic" }
+# bold_italic = { family = "Mononoki Nerd Font", style = "Bold Italic"}
+
+# Font size in points(default 11.25).
+size = 12.0
+
+
+##### Visual Bell #####
+[bell]
+# Visual bell animation effect for flashing the screen when the visual bell is rung.
+# Values for `animation`:
+#   - Ease
+#   - EaseOut
+#   - EaseOutSine
+#   - EaseOutQuad
+#   - EaseOutCubic
+#   - EaseOutQuart
+#   - EaseOutQuint
+#   - EaseOutExpo
+#   - EaseOutCirc
+#   - Linear (default)
+animation = "EaseOutExpo"
+
+# Duration of the visual bell flash in milliseconds.
+# A `duration` of `0` will disable the visual bell animation(default=0).
+duration = 0
+
+# Visual bell animation color(default=#ffffff).
+color = "#ffffff"
+
+# This program is executed whenever the bell is rung(default=None).
+# program = "None"
+
+
+##### Selection #####
+[selection]
+# This string contains all characters that are used as separators for "semantic words" in Alacritty.
+# semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+# When set to `true`, selected text will be copied to the primary clipboard.
+# save_to_clipboard = false
+
+
+##### Cursor #####
+[cursor]
+# Values for `style`:
+#   - ▇ Block (default)
+#   - _ Underline
+#   - | Beam
+# Values for `blinking`
+#   - Never
+#   - Off (default)
+#   - On
+#   - Always
+style = { shape = "Block", blinking = "Off" }
+vi_mode_style = { shape = "Block", blinking = "On" }
+
+# Cursor blinking interval in milliseconds(ddefault=750).
+blink_interval = 750
+
+# Time after which cursor stops blinking, in seconds.
+# Specifying 0 will disable timeout for blinking(default=5).
+blink_timeout = 0
+
+# When this is true, the cursor will be rendered as a hollow box when the window is not focused(default=true).
+# unfocused_hollow = true
+
+# Thickness of the cursor relative to the cell width as floating point number from 0.0 to 1.0.
+# thickness = 0.15
+
+
+##### Terminal #####
+[terminal]
+# Controls the ability to write to the system clipboard with the OSC 52 escape sequence.
+# While this escape sequence is useful to copy contents from the remote server,
+# allowing any application to read from the clipboard can be easily abused 
+# while not providing significant benefits over explicitly pasting text.
+# osc52= "OnlyCopy"
+
+
+##### Mouse #####
+[mouse]
+# When this is true, the cursor is temporarily hidden when typing(default=false).
+hide_when_typing = false
+
+# Mouse bindings are specified as a list of objects, much like the key bindings further below.
+#
+# Each mouse binding will specify a:
+# - `mouse`:
+#     - Middle
+#     - Left
+#     - Right
+#     - Numeric identifier such as `5`
+# - `action` (see key bindings)#
+# And optionally:
+# - `mods` (see key bindings)
+bindings = [
+  { mouse = "Right", mods = "Control", action = "Paste" },
+  { mouse = "Middle", action = "PasteSelection" },
+]
+
+
+##### Hint #####
+# Terminal hints can be used to find text or hyperlinks in the visible part of the terminal
+# and pipe it to other applications.
+
+##### Keyboard #####
+# See: `man alacritty-bindings`
+# [keyboard]
+# bindings = [
+# { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+# { key = "L", mods = "Control|Shift", chars = "l" },
+# ]
+
+
+##### Debug #####
+# Debug options are meant to help troubleshoot issues with Alacritty. These can change or be removed entirely without warning, so their stability shouldn't be relied upon.
+# [debug]
+# "Off" | "Error" | "Warn"(default) | "Info" | "Debug" | "Trace"
+# log_level = "Warn"
+
+# Keep the log file after quitting Alacritty(default=false).
+# persistent_logging = false
