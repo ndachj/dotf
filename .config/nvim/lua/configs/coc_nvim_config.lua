@@ -1,7 +1,7 @@
 -- Make coc.nvim install extensions on startup,
 -- See `:help g:coc_global_extensions`
 vim.g.coc_global_extensions = { "coc-pairs", "coc-git", "coc-json", "coc-prettier", "coc-snippets", "coc-sumneko-lua",
-    "coc-pyright", "coc-sh", "coc-marketplace", "coc-markdownlint", "coc-cmake" }
+    "coc-pyright", "coc-sh", "coc-marketplace", "coc-markdownlint", "coc-cmake", "coc-toml" }
 
 local keyset = vim.keymap.set
 

@@ -124,7 +124,7 @@ For example, to install a coc-extension for **python**, run:
 I have already defined some global coc-extensions to be installed automatically on start up. Please make changes according to your workflow.
 
 ```lua
-vim.g.coc_global_extensions = { "coc-pairs", "coc-git", "coc-json", "coc-prettier", "coc-snippets","coc-sumneko-lua", "coc-pyright", "coc-sh", "coc-marketplace", "coc-markdownlint", "coc-cmake" }
+vim.g.coc_global_extensions = { "coc-pairs", "coc-git", "coc-json", "coc-prettier", "coc-snippets","coc-sumneko-lua", "coc-pyright", "coc-sh", "coc-marketplace", "coc-markdownlint", "coc-cmake", "coc-toml" }
 ```
 
 To discover coc-extensions use the [coc-marketplace](https://github.com/fannheyward/coc-marketplace)

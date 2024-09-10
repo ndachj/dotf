@@ -4,7 +4,7 @@
 ##### General #####
 # Import additional configuration files.
 import = [
-  "~/.config/alacritty/chalkboard-alacritty.toml",
+  "~/.config/alacritty/jivu-alacritty.toml",
   # "~/.config/alacritty/keybindings.toml",
   # "alacritty-theme/themes/gruvbox_dark.toml",
 ]
