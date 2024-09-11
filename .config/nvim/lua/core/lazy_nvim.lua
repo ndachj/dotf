@@ -23,6 +23,14 @@ local opts = {
     defaults = {
         lazy = false,                                         -- should plugins be lazy-loaded?
     },
+    -- Develper - test lcal plugins
+    -- dev = {
+    --     ---@type string | fun(plugin: LazyPlugin): string directory where you store your local plugin projects
+    --     path = "~/ez.nvim/",
+    --     ---@type string[] plugins that match these patterns will use your local versions instead of being fetched from GitHub
+    --     patterns = { "jivu.vim" }, -- For example {"folke"}
+    --     fallback = false,          -- Fallback to git when local plugin doesn't exist
+    -- },
     checker = {
         -- automatically check for plugin updates
         enabled = false,

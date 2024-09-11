@@ -29,7 +29,7 @@ Window manager
 
 Shell
 
-- [Bash](./.bashrc)
+- [Bash](./.config/bash/README.md)
 - [Zsh](./.config/zsh/README.md)
 
 Terminal emulator
@@ -47,6 +47,9 @@ Android emulator
     ├── .config/
     │   ├── alacritty/
     │   │   └── alacritty.toml
+    │   ├── bash/
+    │   │   ├── .bash_aliases
+    │   │   └── .bashrc
     │   ├── nvim/
     │   │   ├── lua/
     │   │   └── init.lua

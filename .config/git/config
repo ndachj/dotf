@@ -1,0 +1,14 @@
+[init]
+	defaultBranch = main ; set 'main' as default branch 
+[user]
+	email = 162441874+ndachj@users.noreply.github.com
+	name = Ndachj
+[color]
+	ui = auto ; colorful command line output
+[core]
+	editor = nvim ; set 'nvim' as default editor
+[alias]
+	l = log  --graph --pretty=oneline --abbrev-commit --decorate ; view nice formated log
+	undo = reset HEAD~1 --mixed ; undo the last changes
+	last = log -1 HEAD --stat ; view last commit
+	alias = config --global -l ; get a list of my git aliases

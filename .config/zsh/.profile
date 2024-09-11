@@ -17,6 +17,7 @@ if [[ -d "$HOME/.local/bin" ]]; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+##### Startup files
 # directory to search for shell startup files (.zshrc, etc), if not $HOME.
 if [[ -n "$ZSH_VERSION" ]]; then
     export ZDOTDIR="$HOME/.config/zsh"
@@ -27,5 +28,6 @@ if [[ -n "$BASH_VERSION" ]]; then
     source "$BDOTDIR/.bashrc"
 fi
 
+##### Other Stuff
 # view manpages in Nvim - See `:help ft-man-plugin`
 export MANPAGER='nvim +Man!'
