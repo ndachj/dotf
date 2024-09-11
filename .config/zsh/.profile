@@ -22,5 +22,10 @@ if [[ -n "$ZSH_VERSION" ]]; then
     export ZDOTDIR="$HOME/.config/zsh"
 fi
 
+if [[ -n "$BASH_VERSION" ]]; then
+    export BDOTDIR="$HOME/.config/bash"
+    source "$BDOTDIR/.bashrc"
+fi
+
 # view manpages in Nvim - See `:help ft-man-plugin`
 export MANPAGER='nvim +Man!'

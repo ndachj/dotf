@@ -9,9 +9,10 @@
 - [zsh](https://github.com/zsh-users/zsh)
 - git
 - [fzf](https://github.com/junegunn/fzf)
+- [fd](https://github.com/sharkdp/fd)
 
   ```sh
-  sudo apt install zsh git fzf
+  sudo apt install zsh git fzf fd
   ```
 
 ### ⚡ Setup
