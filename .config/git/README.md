@@ -1,9 +1,10 @@
-#  Git Configuration
+# Git Configuration
 
 See: `man git-config`
 
-System-wide configuration - `/etc/gitconfig`User(global) configuration - `$XDG_CONFIG_HOME/git/config` or `~/.gitconfig`
-Repository(local) configuration - `.git/config`
+- System-wide configuration - `/etc/gitconfig`
+- User(global) configuration - `$XDG_CONFIG_HOME/git/config` or `~/.gitconfig`
+- Repository(local) configuration - `.git/config`
 
 ### Set up your username/email address
 
@@ -40,7 +41,7 @@ git config --global init.defaultBranch main
 ### Define Git Aliases: using git alias (place in your global .gitconfig file)
 
 ```sh
-# get nice formated log
+# get nice formated logs
 git config --global alias.l "log --graph --pretty=oneline --abbrev-commit --decorate"
 ```
 

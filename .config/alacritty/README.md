@@ -11,5 +11,6 @@ About [Alacritty](https://github.com/alacritty/alacritty)
 <pre>
 ~/.config/alacritty
     ├── alacritty.toml
+    ├── base16-chalk-alacritty.toml
     └── jivu-alacritty.toml
 </pre>

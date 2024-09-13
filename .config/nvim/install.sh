@@ -78,6 +78,7 @@ function lsp_setup() {
 
     _fancy_print "Installing LSP ...."
     python3 -m pip install flake8
+    python3 -m pip install autopep8
     npm install -g bash-language-server
 
     local LSP_PKGS=(

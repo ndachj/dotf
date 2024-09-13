@@ -1,0 +1,3 @@
+return {
+    dir = "~/chalk/chalk"
+}
