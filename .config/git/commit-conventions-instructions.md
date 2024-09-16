@@ -1,4 +1,4 @@
-#  How to use
+# How to use commits conventions template
 
 To add the template to your global git config is enter the following:
 
